@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnología en Salud</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            background: url('imagenes/fondo_salud.avif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        .contenido {
+            margin-top: 80px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 12px;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .tarjeta {
+            background-color: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.4s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .tarjeta:hover {
+            transform: scale(1.05);
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .contenido-tarjeta {
+            padding: 15px;
+        }
+
+        .contenido-tarjeta h3 {
+            margin-top: 0;
+            color: #00ffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="innovaciones.html">Innovaciones</a></li>
+            <li><a href="salud.html">Tecnología en Salud</a></li>
+            <li><a href="autos.html">Autos del Futuro</a></li>
+          
+        </ul>
+    </nav>
+
+    <section class="contenido">
+        <h2>Tecnología en Salud</h2>
+        <p>Los avances médicos más importantes impulsados por la tecnología moderna.</p>
+
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <img src="imagenes/telemedicina.jpg" alt="Telemedicina">
+                <div class="contenido-tarjeta">
+                    <h3>Telemedicina</h3>
+                    <p>Permite consultas médicas a distancia, facilitando el acceso a atención médica en áreas remotas.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="imagenes/robot_quirurgico.jpg" alt="Robot Quirúrgico">
+                <div class="contenido-tarjeta">
+                    <h3>Robots Quirúrgicos</h3>
+                    <p>Aumentan la precisión en las operaciones con mínima invasión y rápida recuperación.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="imagenes/diagnostico_ia.jpeg" alt="Diagnóstico con IA">
+                <div class="contenido-tarjeta">
+                    <h3>Diagnóstico con IA</h3>
+                    <p>La inteligencia artificial ayuda a detectar enfermedades con mayor rapidez y exactitud.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="imagenes/monitor_paciente.jpg" alt="Monitorización Remota">
+                <div class="contenido-tarjeta">
+                    <h3>Monitorización Remota</h3>
+                    <p>Permite el seguimiento constante de signos vitales sin necesidad de hospitalización continua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
